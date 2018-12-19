@@ -1,0 +1,8 @@
+sc-ui/node_modules
+sc-ui/react-backend/node_modules
+sc-ui/monitoring_admin
+sc-ui/*priv
+sc-ui/*pub
+sc-ui/connection_profile.json
+sc-ui/docker.out
+fabric-samples/

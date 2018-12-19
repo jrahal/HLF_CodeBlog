@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+  name: ingress
+spec:
+  tls:
+  - hosts:
+    - YOUR_INGRESS_URL
+    secretName: YOUR_INGRESS_SECRET
+  backend:
+    serviceName: mobile-assets
+    servicePort: 80
+  rules:
+  - host: YOUR_INGRESS_URL
+    http:
+      paths:
+      - path: /api
+        backend:
+          serviceName: rabbitclient-api
+          servicePort: 3000
+      - path: /registerees
+        backend:
+          serviceName: registeree-api
+          servicePort: 80
+      - path: /leaderboard
+        backend:
+          serviceName: leaderboard-api
+          servicePort: 80

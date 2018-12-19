@@ -1,0 +1,15 @@
+applications:
+- name: blockchain-securitization
+  path: sc-ui
+  timeout: 180
+  #command: "npm start | npm install react-backend && PORT=3001 node react-backend/bin/www"
+  #command: "npm start | PORT=3001 node react-backend/bin/www"
+  command: PORT=3001 node react-backend/bin/www | NODE_ENV=production node_modules/.bin/webpack-dev-server
+  #port: 8081
+  memory: 512M
+  engines:
+    node: 8.9.0
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  env:
+    HOST: 0.0.0.0
+#- name: blockchain-securitization-backend-${random-word}

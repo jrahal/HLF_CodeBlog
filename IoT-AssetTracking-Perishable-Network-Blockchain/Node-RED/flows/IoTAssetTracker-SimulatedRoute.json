@@ -1,0 +1,290 @@
+[
+    {
+        "id": "24aab329.a0d324",
+        "type": "tab",
+        "label": "Simulated Route",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "40d7609d.85a22",
+        "type": "inject",
+        "z": "24aab329.a0d324",
+        "name": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "7c8d6acb.b9d81c"
+            ]
+        ]
+    },
+    {
+        "id": "7c8d6acb.b9d81c",
+        "type": "template",
+        "z": "24aab329.a0d324",
+        "name": "Paste GPX file into this Template node",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<gpx version=\"1.1\" creator=\"https://onthegomap.com\" xmlns=\"http://www.topografix.com/GPX/1/1\">\n  <metadata>\n    <name>6.43 mi route</name>\n    <link href=\"https://onthegomap.com\"><text>On The Go Map</text></link>\n    <time>2018-10-04T04:13:47.047Z</time>\n  </metadata>\n  <rte>\n    <rtept lat=\"40.76792\" lon=\"-73.98118\"/>\n    <rtept lat=\"40.76809\" lon=\"-73.98117\"/>\n    <rtept lat=\"40.76805\" lon=\"-73.98053\"/>\n    <rtept lat=\"40.76777\" lon=\"-73.97972\"/>\n    <rtept lat=\"40.76777\" lon=\"-73.97916\"/>\n    <rtept lat=\"40.76789\" lon=\"-73.97885\"/>\n    <rtept lat=\"40.76817\" lon=\"-73.97841\"/>\n    <rtept lat=\"40.76823\" lon=\"-73.97811\"/>\n    <rtept lat=\"40.76809\" lon=\"-73.97769\"/>\n    <rtept lat=\"40.76801\" lon=\"-73.97748\"/>\n    <rtept lat=\"40.76859\" lon=\"-73.97645\"/>\n    <rtept lat=\"40.7688\" lon=\"-73.97635\"/>\n    <rtept lat=\"40.76916\" lon=\"-73.97575\"/>\n    <rtept lat=\"40.76969\" lon=\"-73.97537\"/>\n    <rtept lat=\"40.76971\" lon=\"-73.97519\"/>\n    <rtept lat=\"40.76978\" lon=\"-73.97504\"/>\n    <rtept lat=\"40.76978\" lon=\"-73.97472\"/>\n    <rtept lat=\"40.76984\" lon=\"-73.97455\"/>\n    <rtept lat=\"40.76992\" lon=\"-73.97427\"/>\n    <rtept lat=\"40.76987\" lon=\"-73.97342\"/>\n    <rtept lat=\"40.76968\" lon=\"-73.97311\"/>\n    <rtept lat=\"40.76951\" lon=\"-73.97256\"/>\n    <rtept lat=\"40.76952\" lon=\"-73.97224\"/>\n    <rtept lat=\"40.7697\" lon=\"-73.9719\"/>\n    <rtept lat=\"40.77017\" lon=\"-73.97128\"/>\n    <rtept lat=\"40.77066\" lon=\"-73.97102\"/>\n    <rtept lat=\"40.77107\" lon=\"-73.97065\"/>\n    <rtept lat=\"40.77145\" lon=\"-73.96991\"/>\n    <rtept lat=\"40.77177\" lon=\"-73.96939\"/>\n    <rtept lat=\"40.77228\" lon=\"-73.96902\"/>\n    <rtept lat=\"40.77247\" lon=\"-73.96867\"/>\n    <rtept lat=\"40.77271\" lon=\"-73.96841\"/>\n    <rtept lat=\"40.77261\" lon=\"-73.96766\"/>\n    <rtept lat=\"40.77289\" lon=\"-73.9675\"/>\n    <rtept lat=\"40.77293\" lon=\"-73.96722\"/>\n    <rtept lat=\"40.77321\" lon=\"-73.96701\"/>\n    <rtept lat=\"40.77357\" lon=\"-73.96711\"/>\n    <rtept lat=\"40.77382\" lon=\"-73.96694\"/>\n    <rtept lat=\"40.77435\" lon=\"-73.96655\"/>\n    <rtept lat=\"40.77463\" lon=\"-73.96623\"/>\n    <rtept lat=\"40.7749\" lon=\"-73.96581\"/>\n    <rtept lat=\"40.77538\" lon=\"-73.96565\"/>\n    <rtept lat=\"40.77578\" lon=\"-73.9655\"/>\n    <rtept lat=\"40.77626\" lon=\"-73.96527\"/>\n    <rtept lat=\"40.77648\" lon=\"-73.96511\"/>\n    <rtept lat=\"40.77688\" lon=\"-73.96467\"/>\n    <rtept lat=\"40.77696\" lon=\"-73.96415\"/>\n    <rtept lat=\"40.77705\" lon=\"-73.96386\"/>\n    <rtept lat=\"40.77771\" lon=\"-73.96332\"/>\n    <rtept lat=\"40.7777\" lon=\"-73.96309\"/>\n    <rtept lat=\"40.77832\" lon=\"-73.96264\"/>\n    <rtept lat=\"40.77896\" lon=\"-73.96219\"/>\n    <rtept lat=\"40.77959\" lon=\"-73.96172\"/>\n    <rtept lat=\"40.7802\" lon=\"-73.96154\"/>\n    <rtept lat=\"40.7808\" lon=\"-73.96201\"/>\n    <rtept lat=\"40.78132\" lon=\"-73.96248\"/>\n    <rtept lat=\"40.78146\" lon=\"-73.96262\"/>\n    <rtept lat=\"40.7809\" lon=\"-73.96104\"/>\n    <rtept lat=\"40.78125\" lon=\"-73.96104\"/>\n    <rtept lat=\"40.78146\" lon=\"-73.96098\"/>\n    <rtept lat=\"40.78156\" lon=\"-73.96086\"/>\n    <rtept lat=\"40.78205\" lon=\"-73.96036\"/>\n    <rtept lat=\"40.78312\" lon=\"-73.95958\"/>\n    <rtept lat=\"40.78367\" lon=\"-73.95918\"/>\n    <rtept lat=\"40.78413\" lon=\"-73.95895\"/>\n    <rtept lat=\"40.78636\" lon=\"-73.9574\"/>\n    <rtept lat=\"40.78735\" lon=\"-73.95707\"/>\n    <rtept lat=\"40.78839\" lon=\"-73.95692\"/>\n    <rtept lat=\"40.78891\" lon=\"-73.9571\"/>\n    <rtept lat=\"40.7894\" lon=\"-73.95744\"/>\n    <rtept lat=\"40.78973\" lon=\"-73.95741\"/>\n    <rtept lat=\"40.7898\" lon=\"-73.95752\"/>\n    <rtept lat=\"40.79011\" lon=\"-73.95769\"/>\n    <rtept lat=\"40.79043\" lon=\"-73.95843\"/>\n    <rtept lat=\"40.79066\" lon=\"-73.95857\"/>\n    <rtept lat=\"40.79124\" lon=\"-73.95834\"/>\n    <rtept lat=\"40.7916\" lon=\"-73.95828\"/>\n    <rtept lat=\"40.79206\" lon=\"-73.95805\"/>\n    <rtept lat=\"40.79232\" lon=\"-73.95811\"/>\n    <rtept lat=\"40.7928\" lon=\"-73.95851\"/>\n    <rtept lat=\"40.79326\" lon=\"-73.95839\"/>\n    <rtept lat=\"40.79338\" lon=\"-73.95836\"/>\n    <rtept lat=\"40.79349\" lon=\"-73.95835\"/>\n    <rtept lat=\"40.79376\" lon=\"-73.95808\"/>\n    <rtept lat=\"40.79397\" lon=\"-73.95814\"/>\n    <rtept lat=\"40.79419\" lon=\"-73.95801\"/>\n    <rtept lat=\"40.79432\" lon=\"-73.95799\"/>\n    <rtept lat=\"40.7944\" lon=\"-73.95812\"/>\n    <rtept lat=\"40.79442\" lon=\"-73.9582\"/>\n    <rtept lat=\"40.79452\" lon=\"-73.95821\"/>\n    <rtept lat=\"40.79461\" lon=\"-73.95827\"/>\n    <rtept lat=\"40.79474\" lon=\"-73.95827\"/>\n    <rtept lat=\"40.79503\" lon=\"-73.95768\"/>\n    <rtept lat=\"40.79527\" lon=\"-73.95706\"/>\n    <rtept lat=\"40.79562\" lon=\"-73.95694\"/>\n    <rtept lat=\"40.79584\" lon=\"-73.9569\"/>\n    <rtept lat=\"40.79609\" lon=\"-73.95672\"/>\n    <rtept lat=\"40.79641\" lon=\"-73.9566\"/>\n    <rtept lat=\"40.79651\" lon=\"-73.95674\"/>\n    <rtept lat=\"40.79688\" lon=\"-73.95681\"/>\n    <rtept lat=\"40.79725\" lon=\"-73.95699\"/>\n    <rtept lat=\"40.79774\" lon=\"-73.95698\"/>\n    <rtept lat=\"40.79816\" lon=\"-73.95742\"/>\n    <rtept lat=\"40.79826\" lon=\"-73.9573\"/>\n    <rtept lat=\"40.79839\" lon=\"-73.95762\"/>\n    <rtept lat=\"40.79867\" lon=\"-73.95812\"/>\n    <rtept lat=\"40.79878\" lon=\"-73.95805\"/>\n    <rtept lat=\"40.79902\" lon=\"-73.95785\"/>\n    <rtept lat=\"40.79916\" lon=\"-73.95774\"/>\n    <rtept lat=\"40.79884\" lon=\"-73.95791\"/>\n    <rtept lat=\"40.79879\" lon=\"-73.95811\"/>\n    <rtept lat=\"40.79878\" lon=\"-73.95846\"/>\n    <rtept lat=\"40.79874\" lon=\"-73.95861\"/>\n    <rtept lat=\"40.79857\" lon=\"-73.95865\"/>\n    <rtept lat=\"40.79799\" lon=\"-73.95851\"/>\n    <rtept lat=\"40.7976\" lon=\"-73.95835\"/>\n    <rtept lat=\"40.79727\" lon=\"-73.95835\"/>\n    <rtept lat=\"40.79713\" lon=\"-73.9582\"/>\n    <rtept lat=\"40.79677\" lon=\"-73.95826\"/>\n    <rtept lat=\"40.79658\" lon=\"-73.9585\"/>\n    <rtept lat=\"40.79638\" lon=\"-73.95847\"/>\n    <rtept lat=\"40.79613\" lon=\"-73.95823\"/>\n    <rtept lat=\"40.79593\" lon=\"-73.95838\"/>\n    <rtept lat=\"40.79589\" lon=\"-73.9588\"/>\n    <rtept lat=\"40.79571\" lon=\"-73.9589\"/>\n    <rtept lat=\"40.79548\" lon=\"-73.95906\"/>\n    <rtept lat=\"40.79527\" lon=\"-73.95939\"/>\n    <rtept lat=\"40.79516\" lon=\"-73.95955\"/>\n    <rtept lat=\"40.79497\" lon=\"-73.95968\"/>\n    <rtept lat=\"40.79478\" lon=\"-73.95963\"/>\n    <rtept lat=\"40.79459\" lon=\"-73.95968\"/>\n    <rtept lat=\"40.79438\" lon=\"-73.95973\"/>\n    <rtept lat=\"40.79401\" lon=\"-73.96011\"/>\n    <rtept lat=\"40.79376\" lon=\"-73.96089\"/>\n    <rtept lat=\"40.79339\" lon=\"-73.96146\"/>\n    <rtept lat=\"40.7928\" lon=\"-73.96193\"/>\n    <rtept lat=\"40.79197\" lon=\"-73.9624\"/>\n    <rtept lat=\"40.79165\" lon=\"-73.96257\"/>\n    <rtept lat=\"40.79138\" lon=\"-73.96279\"/>\n    <rtept lat=\"40.79089\" lon=\"-73.96356\"/>\n    <rtept lat=\"40.79058\" lon=\"-73.96403\"/>\n    <rtept lat=\"40.78999\" lon=\"-73.96422\"/>\n    <rtept lat=\"40.78939\" lon=\"-73.96419\"/>\n    <rtept lat=\"40.78899\" lon=\"-73.96445\"/>\n    <rtept lat=\"40.78846\" lon=\"-73.96581\"/>\n    <rtept lat=\"40.78823\" lon=\"-73.96626\"/>\n    <rtept lat=\"40.78791\" lon=\"-73.9667\"/>\n    <rtept lat=\"40.7877\" lon=\"-73.96704\"/>\n    <rtept lat=\"40.78713\" lon=\"-73.96749\"/>\n    <rtept lat=\"40.78608\" lon=\"-73.96779\"/>\n    <rtept lat=\"40.78541\" lon=\"-73.96858\"/>\n    <rtept lat=\"40.78539\" lon=\"-73.96903\"/>\n    <rtept lat=\"40.78522\" lon=\"-73.96919\"/>\n    <rtept lat=\"40.78505\" lon=\"-73.96874\"/>\n    <rtept lat=\"40.78471\" lon=\"-73.96762\"/>\n    <rtept lat=\"40.78484\" lon=\"-73.96791\"/>\n    <rtept lat=\"40.78508\" lon=\"-73.96884\"/>\n    <rtept lat=\"40.7853\" lon=\"-73.96935\"/>\n    <rtept lat=\"40.78447\" lon=\"-73.96954\"/>\n    <rtept lat=\"40.78406\" lon=\"-73.96918\"/>\n    <rtept lat=\"40.78355\" lon=\"-73.96913\"/>\n    <rtept lat=\"40.78285\" lon=\"-73.9693\"/>\n    <rtept lat=\"40.7825\" lon=\"-73.96942\"/>\n    <rtept lat=\"40.78195\" lon=\"-73.96943\"/>\n    <rtept lat=\"40.78153\" lon=\"-73.9694\"/>\n    <rtept lat=\"40.78088\" lon=\"-73.96975\"/>\n    <rtept lat=\"40.78044\" lon=\"-73.97033\"/>\n    <rtept lat=\"40.77985\" lon=\"-73.97117\"/>\n    <rtept lat=\"40.77914\" lon=\"-73.9719\"/>\n    <rtept lat=\"40.77856\" lon=\"-73.97266\"/>\n    <rtept lat=\"40.77829\" lon=\"-73.97313\"/>\n    <rtept lat=\"40.77797\" lon=\"-73.97357\"/>\n    <rtept lat=\"40.77736\" lon=\"-73.97404\"/>\n    <rtept lat=\"40.77689\" lon=\"-73.97408\"/>\n    <rtept lat=\"40.77535\" lon=\"-73.97396\"/>\n    <rtept lat=\"40.77485\" lon=\"-73.97432\"/>\n    <rtept lat=\"40.77471\" lon=\"-73.97459\"/>\n    <rtept lat=\"40.77455\" lon=\"-73.97532\"/>\n    <rtept lat=\"40.77429\" lon=\"-73.97564\"/>\n    <rtept lat=\"40.77327\" lon=\"-73.9763\"/>\n    <rtept lat=\"40.7727\" lon=\"-73.97656\"/>\n    <rtept lat=\"40.77189\" lon=\"-73.97699\"/>\n    <rtept lat=\"40.77156\" lon=\"-73.9773\"/>\n    <rtept lat=\"40.77091\" lon=\"-73.97824\"/>\n    <rtept lat=\"40.77049\" lon=\"-73.97878\"/>\n    <rtept lat=\"40.77012\" lon=\"-73.97919\"/>\n    <rtept lat=\"40.76943\" lon=\"-73.97976\"/>\n    <rtept lat=\"40.7691\" lon=\"-73.9799\"/>\n    <rtept lat=\"40.7689\" lon=\"-73.97996\"/>\n    <rtept lat=\"40.76876\" lon=\"-73.97991\"/>\n    <rtept lat=\"40.76872\" lon=\"-73.98033\"/>\n    <rtept lat=\"40.76837\" lon=\"-73.9813\"/>\n    <rtept lat=\"40.76813\" lon=\"-73.98117\"/>\n    <rtept lat=\"40.76798\" lon=\"-73.98117\"/>\n    <rtept lat=\"40.76781\" lon=\"-73.98124\"/>\n  </rte>\n</gpx>",
+        "output": "str",
+        "x": 370,
+        "y": 400,
+        "wires": [
+            [
+                "39b8d718.876a7"
+            ]
+        ]
+    },
+    {
+        "id": "eac5bef1.7dfc9",
+        "type": "debug",
+        "z": "24aab329.a0d324",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 630,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "8b794514.171258",
+        "type": "comment",
+        "z": "24aab329.a0d324",
+        "name": "#1 - Visit https://onthegomap.com to map a simulated course",
+        "info": "",
+        "x": 440,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b663982e.2d6258",
+        "type": "comment",
+        "z": "24aab329.a0d324",
+        "name": "#2 - Export route to a GPX file",
+        "info": "After plotting an interesting route,\nclick on the menu in the upper right corner \nof the https://onthegomap.com/#/create\nSelect \"Export as GPX\"\nSave as a text file\n\nYou might want to open the txt file and inspect\nthe lat / lon geocoordinates.\n\nIf your route is many thousands of waypoint entries,\nyou will fill a very big blockchain transaction\nhistory.  Keep the route to < 500 waypoints",
+        "x": 340,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f5ef19a5.8ae7b",
+        "type": "comment",
+        "z": "24aab329.a0d324",
+        "name": "#3 - Paste the entire GPX text file into the Template node below",
+        "info": "",
+        "x": 450,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "39b8d718.876a7",
+        "type": "function",
+        "z": "24aab329.a0d324",
+        "name": "Extract Route",
+        "func": "var waypoints = msg.payload.split(/\\r?\\n/) ;\n// the GPX file will contain many\n//  <rtept lat=\"40.76789\" lon=\"-73.9812\"/>\"\n\ngeocoordinates = waypoints.filter(path => path.match(/rtept/));\nvar route = \"\";\n\n//var lat, lon;\n//var geo = [];\n\nfor( x=0; x< geocoordinates.length; x++ ) {\n    fields = geocoordinates[x].split('\"');\n//    lat = parseFloat(fields[1]);\n//    lon = parseFloat(fields[3]);\n//    geo.push({lat,lon});\n    route = route + fields[1] + \",\"+ fields[3] + \"\\n\";\n}\n//msg.payload = geo;   // Array of geocoords\n\n// Send a big string to the CSV node so that\n// the CSV node splits each geocoord into an individual msg\nmsg.payload = route;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 400,
+        "wires": [
+            [
+                "5b1d8ecb.804d"
+            ]
+        ]
+    },
+    {
+        "id": "5b1d8ecb.804d",
+        "type": "csv",
+        "z": "24aab329.a0d324",
+        "name": "Split Route",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "lat,lon",
+        "skip": "0",
+        "x": 170,
+        "y": 500,
+        "wires": [
+            [
+                "a822eff2.4412c8"
+            ]
+        ]
+    },
+    {
+        "id": "d89e55f8.3b9768",
+        "type": "function",
+        "z": "24aab329.a0d324",
+        "name": "Simulate a Blockchain Temperature Transaction",
+        "func": "var now = Date.now();\nvar d = new Date(now);\nvar ts = d.getFullYear() + \"-\" + ('0' + (d.getMonth()+1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2)+ \"T\" + d.getHours() + \":\" + d.getMinutes() + \":\" + d.getSeconds()+\"Z\";\n\n\nmsg.payload = { \"AssetID\":\"34304\",\n                \"timestamp\": ts ,\n                \"Temperature\": {\"Celsius\":Math.floor(Math.round(Math.random()*11)+1) },\n                \"gps\": {\"lat\":msg.payload.lat.toString(),\"lon\":msg.payload.lon.toString()}};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 580,
+        "wires": [
+            [
+                "eac5bef1.7dfc9",
+                "e44c8973.1492e8"
+            ]
+        ]
+    },
+    {
+        "id": "a822eff2.4412c8",
+        "type": "delay",
+        "z": "24aab329.a0d324",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 380,
+        "y": 500,
+        "wires": [
+            [
+                "d89e55f8.3b9768"
+            ]
+        ]
+    },
+    {
+        "id": "307fb704.7e2078",
+        "type": "comment",
+        "z": "24aab329.a0d324",
+        "name": "This example is a bike route through New York City Central Park",
+        "info": "",
+        "x": 450,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "22ea9728.739a6",
+        "type": "comment",
+        "z": "24aab329.a0d324",
+        "name": "Configure this  link node to the \"Blockchain REST API\" flow tab and \"Build a TemperatureReading Transaction\" link node",
+        "info": "",
+        "x": 520,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "e44c8973.1492e8",
+        "type": "link out",
+        "z": "24aab329.a0d324",
+        "name": "",
+        "links": [
+            "ae534d7a.bba95"
+        ],
+        "x": 580,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "3f2b2e52.781ba2",
+        "type": "debug",
+        "z": "24aab329.a0d324",
+        "name": "Blockchain Asset response",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 940,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e05835b2.d9e828",
+        "type": "debug",
+        "z": "24aab329.a0d324",
+        "name": "Add Bicycle Asset",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 590,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b97ba68b.6aa838",
+        "type": "http request",
+        "z": "24aab329.a0d324",
+        "name": "hyperledger - Create Bicycle Asset",
+        "method": "POST",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 640,
+        "y": 160,
+        "wires": [
+            [
+                "3f2b2e52.781ba2"
+            ]
+        ]
+    },
+    {
+        "id": "8201843c.bd7f9",
+        "type": "comment",
+        "z": "24aab329.a0d324",
+        "name": "One Time Setup to create the Blockchain Bicycle Shipment",
+        "info": "Remember to edit the Blockchain Model chaincode (logic.js) \nIn the setupDemo() function, insert your Particle Device ID\nas the Shipment ID",
+        "x": 270,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "92dccf1.dbc19b",
+        "type": "inject",
+        "z": "24aab329.a0d324",
+        "name": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "c06feddc.e111"
+            ]
+        ]
+    },
+    {
+        "id": "c06feddc.e111",
+        "type": "function",
+        "z": "24aab329.a0d324",
+        "name": "Create Bicycle Shipment Asset",
+        "func": "// A Shipment Blockchain transaction looks like this:\n//      {\n//      \"$class\": \"org.acme.shipping.perishable.Shipment\",\n//      \"shipmentId\": \"34304\",\n//       \"type\": \"MEDICINE\",\n//       \"status\": \"IN_TRANSIT\",\n//       \"unitCount\": 100,\n//       \"contract\": \"resource:org.acme.shipping.perishable.Contract#CON_002\"\n//       }\n\nvar FabricIP=global.get(\"HyperLedgerFabricIP\");\n\nmsg.payload = {\n    \"$class\": \"org.acme.shipping.perishable.Shipment\",\n    \"shipmentId\": \"34304\",\n    \"type\": \"MEDICINE\",\n    \"status\": \"IN_TRANSIT\",\n    \"unitCount\": 100,\n    \"contract\": \"resource:org.acme.shipping.perishable.Contract#CON_002\"\n};\nShipmentMsg = JSON.stringify(msg.payload);\n\nmsg.url = \"http://\"+FabricIP+\"/api/Shipment?data=\"+ShipmentMsg;\nmsg.headers = {\n    \"Content-Type\":\"application/json\",\n    \"Accept\":\"application/json\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "b97ba68b.6aa838",
+                "e05835b2.d9e828"
+            ]
+        ]
+    }
+]
